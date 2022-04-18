@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?x12kup');
+  src:  url('../fonts/icomoon.eot?x12kup#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?x12kup') format('truetype'),
+    url('../fonts/icomoon.woff?x12kup') format('woff'),
+    url('../fonts/icomoon.svg?x12kup#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-whatsup:before {
+  content: "\e901";
+}
+.icon-coins:before {
+  content: "\e902";
+}
+.icon-location:before {
+  content: "\e903";
+}
+.icon-people:before {
+  content: "\e904";
+}
+.icon-main:before {
+    color: #000;
+  content: "\e905";
+}
+.icon-th:before {
+  content: "\e906";
+}
+.icon-calendar:before {
+  content: "\e907";
+}
+.icon-heart:before {
+  content: "\e908";
+}
+.icon-search:before {
+  content: "\e900";
+  color: #606060;
+}
