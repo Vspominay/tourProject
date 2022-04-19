@@ -1,0 +1,22 @@
+@import './variables.scss';
+
+.btn{
+    border-radius: $btn-radius;
+    background: $gradient;
+    padding: 15px 50px;
+    border: 2px solid transparent;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+    transition: .3s linear all;
+
+    &:hover{
+        border: 2px solid $accent;
+        background: transparent;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: $gradient;
+    }
+}

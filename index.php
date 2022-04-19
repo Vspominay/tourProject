@@ -10,6 +10,8 @@
     <!-- // components styles -->
     <link rel="stylesheet" href="./styles/title-screen.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/card.css">
+    <link rel="stylesheet" href="./styles/button.css">
 
 
 
@@ -24,6 +26,13 @@
         ?>
 
         <main class="main">
+            <div class="container">
+                <div class="row">
+                    <?php
+                    require('./modules/tour-card.php');
+                    ?>
+                </div>
+            </div>
 
         </main>
         <?php

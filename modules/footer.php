@@ -12,7 +12,7 @@
                  </ul>
 
                  <ul class="footer__content-contact-items">
-                     <li class="footer__content-item"><span class="icon-whatsup"></span><a href="tel:+380678798449"> +380678798449</a></li>
+                     <li class="footer__content-item"><span class="icon-phone"></span><a href="tel:+380678798449"> +380678798449</a></li>
                      <li class="footer__content-item"><span class="icon-main"></span><a href="mailto:dmytro.horkun@gmail.com"> Mail</a></li>
                      <li class="footer__content-item"><span class="icon-th"></span><a href="https://t.me/dimonchikg"> Telegram</a></li>
                  </ul>

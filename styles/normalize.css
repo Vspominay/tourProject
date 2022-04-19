@@ -20,6 +20,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 ul[class],
 ol[class],
@@ -82,7 +83,7 @@ article > * + * {
   margin-top: 1em;
 }
 a {
-  color: #000;
+  color: #fff;
 }
 
 button {
