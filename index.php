@@ -9,6 +9,7 @@
 
     <!-- // components styles -->
     <link rel="stylesheet" href="./styles/title-screen.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 
 
 
@@ -25,10 +26,10 @@
         <main class="main">
 
         </main>
+        <?php
+        require('./modules/footer.php');
+        ?>
 
-        <footer class="footer">
-
-        </footer>
     </div>
 </body>
 

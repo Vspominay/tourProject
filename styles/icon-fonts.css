@@ -37,7 +37,6 @@
   content: "\e904";
 }
 .icon-main:before {
-    color: #000;
   content: "\e905";
 }
 .icon-th:before {
@@ -51,5 +50,4 @@
 }
 .icon-search:before {
   content: "\e900";
-  color: #606060;
 }

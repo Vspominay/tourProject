@@ -229,7 +229,7 @@
     transition: 0.2s ease-in;
   }
   .header__list li a:hover {
-    color: #FFC700;
+    color: #0499DD;
   }
 }
 @media (min-width: 1024px) {
