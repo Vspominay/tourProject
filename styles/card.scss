@@ -135,8 +135,8 @@
 
 @media (min-width: 768px){
     .col{
-        max-width: 600px;
-        margin: 0 auto 30px;
+        // max-width: 600px;
+        // margin: 0 auto 30px;
 
         &-content{
             display: flex;
@@ -147,8 +147,8 @@
     }
 }
 
-@media (min-width: 1024px){
-    .col {
-        max-width: 760px;
-    }
-}
+// @media (min-width: 1024px){
+//     .col {
+//         max-width: 760px;
+//     }
+// }

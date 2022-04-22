@@ -10,6 +10,7 @@
     line-height: 15px;
     color: #fff;
     transition: .3s linear all;
+    text-align: center;
 
     &:hover{
         border: 2px solid $accent;
@@ -20,3 +21,28 @@
         background-image: $gradient;
     }
 }
+
+.search-btn{
+    display: block;
+    border-radius: $input-radius;
+}
+// .search-btn{
+//     width: 100%;
+//     max-width: 270px;
+//     margin: 0 auto 20px;
+//     position: relative;
+//     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+//     border-radius: $input-radius;
+//     overflow: hidden;
+// }
+// @media (min-width:768px) {
+//     .search-btn {
+//         width: 50%;
+//     }
+// }
+
+// @media (min-width:1024px) {
+//     .search-btn {
+//         width: 25%;
+//     }
+// }

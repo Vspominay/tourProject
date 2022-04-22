@@ -145,10 +145,6 @@
   }
 }
 @media (min-width: 768px) {
-  .col {
-    max-width: 600px;
-    margin: 0 auto 30px;
-  }
   .col-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -156,10 +152,5 @@
   }
   .col .content-image {
     min-width: 230px;
-  }
-}
-@media (min-width: 1024px) {
-  .col {
-    max-width: 760px;
   }
 }

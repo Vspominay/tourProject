@@ -12,6 +12,7 @@
   color: #fff;
   -webkit-transition: 0.3s linear all;
   transition: 0.3s linear all;
+  text-align: center;
 }
 .btn:hover {
   border: 2px solid #0499DD;
@@ -21,4 +22,9 @@
   background-clip: text;
   background-image: -webkit-gradient(linear, left top, right top, from(#0499dd), color-stop(0%, #0499dd), to(#17c1bc));
   background-image: linear-gradient(90deg, #0499dd 0%, #0499dd 0%, #17c1bc 100%);
+}
+
+.search-btn {
+  display: block;
+  border-radius: 10px;
 }

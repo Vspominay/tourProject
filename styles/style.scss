@@ -25,6 +25,8 @@ body{
     overflow-x: hidden;
     color: $text-color;
     min-height: 100vh;
+    background-color: #E5E5E5;
+
 }
 .wrapper{
     position: relative;
@@ -42,5 +44,24 @@ body{
     display: flex;
     flex-wrap: wrap;
     // margin: 0 -15px;
+}
+
+.tours {
+    &__list-title {
+        margin: 0 0 40px 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .tours__list {
+        max-width: 600px;
+        margin:  0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tours__list {
+        max-width: 760px;
+    }
 }
 
