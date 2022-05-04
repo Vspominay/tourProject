@@ -1,6 +1,7 @@
-@import './variables.scss';
+@import "./variables.scss";
 
-.btn{
+.btn {
+    display: inline-block;
     border-radius: $btn-radius;
     background: $gradient;
     padding: 15px 50px;
@@ -9,10 +10,10 @@
     font-size: 12px;
     line-height: 15px;
     color: #fff;
-    transition: .3s linear all;
+    transition: 0.3s linear all;
     text-align: center;
 
-    &:hover{
+    &:hover {
         border: 2px solid $accent;
         background: transparent;
         color: transparent;
@@ -22,7 +23,7 @@
     }
 }
 
-.search-btn{
+.search-btn {
     display: block;
     border-radius: $input-radius;
 }

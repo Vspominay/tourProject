@@ -1,6 +1,7 @@
 /*======= COLORS =======*/
 /*======= BORDER =======*/
 .btn {
+  display: inline-block;
   border-radius: 40px;
   background: -webkit-gradient(linear, left top, right top, from(#0499dd), color-stop(0%, #0499dd), to(#17c1bc));
   background: linear-gradient(90deg, #0499dd 0%, #0499dd 0%, #17c1bc 100%);

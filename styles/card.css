@@ -2,7 +2,6 @@
 /*======= BORDER =======*/
 .col {
   width: 100%;
-  padding: 0 15px;
   margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,7 +109,7 @@
 }
 .col .favorite {
   margin-left: 20px;
-  background: #EDEDED;
+  background: #ededed;
   border-radius: 50%;
   width: 35px;
   height: 35px;
@@ -128,7 +127,7 @@
 }
 .col .favorite span[class^=icon] {
   margin-top: 2px;
-  color: #D4D4D4;
+  color: #d4d4d4;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
