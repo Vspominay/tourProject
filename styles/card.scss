@@ -13,11 +13,17 @@
         box-shadow: 1px 15px 21px 9px rgba(34, 60, 80, 0.2);
     }
     .content-image {
-        background-image: url(../images/card-image.png);
-        background-size: cover;
-        background-position: center;
+        // background-image: url(../images/card-image.png);
+        // background-size: cover;
+        // background-position: center;
         width: 100%;
         min-height: 240px;
+        overflow: hidden;
+        img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+        }
     }
     .content__description {
         padding: 20px 20px 40px;
@@ -136,6 +142,7 @@
         }
         .content-image {
             min-width: 230px;
+            max-width: 230px;
         }
     }
 }
