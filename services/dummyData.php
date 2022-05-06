@@ -12,7 +12,7 @@ $toursArray = array(
         "25.07.2022",
         "Курорт",
         7.5,
-        array('../images/card-image.png'),
+        array('https://www.fairmont.com/assets/0/104/1785/1790/5059/5067/ba5c8a82-6dd5-4635-8ac8-f29dc63c9e9a.jpg'),
     ),
     new Tour(
         "Kleopatra Micador Hotel, 4",
