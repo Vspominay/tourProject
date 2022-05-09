@@ -14,17 +14,21 @@ interface ILuxuryTour
 
 class Tour implements ITour
 {
+    private $id;
     private $title;
     private $country;
     private $during;
     private $description;
-    private $cost; // object which contains the next: {childCost: number, defaultCost: number}
+    private $cost;
     private $date;
     private $type;
     private $rate;
     private $tourImages;
+    private $liked;
+    private $travelRoute;
 
     public function __construct(
+        $id,
         $title,
         $country,
         $during,
@@ -33,8 +37,11 @@ class Tour implements ITour
         $date,
         $type,
         $rate,
-        $tourImages
+        $tourImages,
+        $liked,
+        $travelRoute
     ) {
+        $this->id = $id;
         $this->title = $title;
         $this->country = $country;
         $this->during = $during;
@@ -44,16 +51,22 @@ class Tour implements ITour
         $this->type = $type;
         $this->rate = $rate;
         $this->tourImages = $tourImages;
+        $this->liked = $liked;
+        $this->travelRoute = $travelRoute;
     }
     function __get($property)
     {
         switch ($property) {
+            case 'id':
+                return $this->id;
             case 'title':
                 return $this->title;
             case 'country':
                 return $this->country;
             case 'during':
                 return $this->during;
+            case 'liked':
+                return $this->liked;
             case 'description':
                 return $this->description;
             case 'cost':
@@ -66,17 +79,24 @@ class Tour implements ITour
                 return $this->rate;
             case 'tourImages':
                 return $this->tourImages;
+            case 'travelRoute':
+                return $this->travelRoute;
         }
     }
 
     function __set($property, $value)
     {
         switch ($property) {
+            case 'id':
+                $this->id = $value;
             case 'title':
                 $this->title = $value;
                 break;
             case 'country':
                 $this->country = $value;
+                break;
+            case 'liked':
+                $this->liked = $value;
                 break;
             case 'during':
                 $this->during = $value;
@@ -98,6 +118,9 @@ class Tour implements ITour
                 break;
             case 'tourImages':
                 $this->tourImages = $value;
+                break;
+            case 'travelRoute':
+                $this->travelRoute = $value;
                 break;
         }
     }
@@ -133,6 +156,86 @@ class Tour implements ITour
     {
         return $this->getGallery()[0];
     }
+
+    public function generatePost()
+    {
+        $normalPrice = $this->cost->normalPrice;
+        $childPrice = $this->cost->childPrice;
+        $titlePicture = $this->getTitlePicture();
+        $shortDescription = $this->generateShortDescription();
+
+        return <<< EOT
+        <div class="col _anim-items">
+            <div class="col-content">
+                <div class="content-image">
+                    <img src="$titlePicture" alt="$this->title">
+                </div>
+
+                <div class="content__description">
+                    <div class="description-title">
+                        <h5>
+                            $this->type
+                        </h5>
+                        <h3>
+                            $this->title
+                        </h3>
+                    </div>
+
+                    <div class="description-price__items">
+                        <div class="description-price__item">
+                            <div class="price__item-cost">
+                                <span class="icon-coins"></span>
+                                <span>
+                                    $normalPrice
+                                </span>
+                            </div>
+                            <div class="price__item-age">
+                                Взрослый билет
+                            </div>
+
+                        </div>
+
+                        <div class="description-price__item">
+                            <div class="price__item-cost">
+                                <span class="icon-coins"></span>
+                                <span>
+                                    $childPrice
+                                </span>
+                            </div>
+                            <div class="price__item-age">
+                                Детский билет
+                            </div>
+
+                        </div>
+
+                        <div class="description-price__item description__during">
+                            <span class="icon-time"></span>
+                            <span>
+                                $this->date
+                            </span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="description__specification">
+                        $shortDescription
+                    </div>
+
+                    <div class="description__interact">
+                        <a href="pages/tour-view/index.php?id=$this->id" class="btn">
+                            Подробнее
+                        </a>
+
+                        <a href="#" class="favorite">
+                            <span class="icon-heart"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        EOT;
+    }
 }
 
 class luxuryTour extends Tour implements ILuxuryTour
@@ -141,6 +244,7 @@ class luxuryTour extends Tour implements ILuxuryTour
     private $rentCars = array();
 
     function __construct(
+        $id,
         $title,
         $country,
         $during,
@@ -151,12 +255,15 @@ class luxuryTour extends Tour implements ILuxuryTour
         $rate,
         $trips,
         $rentCars,
-        $tourImages
+        $tourImages,
+        $liked,
+        $travelRoute
     ) {
 
         $this->trips = $trips;
         $this->rentCars = $rentCars;
         parent::__construct(
+            $id,
             $title,
             $country,
             $during,
@@ -165,7 +272,9 @@ class luxuryTour extends Tour implements ILuxuryTour
             $date,
             $type,
             $rate,
-            $tourImages
+            $tourImages,
+            $liked,
+            $travelRoute
         );
     }
 

@@ -1,0 +1,13 @@
+._anim-items {
+  opacity: 0;
+  -webkit-transform: translateY(120px);
+  transform: translateY(120px);
+  -webkit-transition: 0.8s linear;
+  transition: 0.8s linear;
+}
+
+._anim-items._active {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1;
+}

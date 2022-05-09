@@ -1,5 +1,7 @@
-function priceRange(minPrice, maxPrice) {
+function priceRange() {
 
+    let minPrice = +document.querySelector("#minHiddenValue").value;
+    let maxPrice = +document.querySelector("#maxHiddenValue").value;
 
     const minPrice_range = document.querySelector('#minPriceControl');
     const maxPrice_range = document.querySelector('#maxPriceControl');
@@ -98,4 +100,4 @@ function debounce(func, ms) {
     }
 }
 
-priceRange(1000, 15000);
+priceRange();

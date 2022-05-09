@@ -29,3 +29,45 @@
   display: block;
   border-radius: 10px;
 }
+
+.description__interact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.favorite {
+  margin-left: 20px;
+  background: #ededed;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.favorite.active span[class^=icon] {
+  color: #0499DD;
+}
+
+.favorite span[class^=icon] {
+  margin-top: 2px;
+  color: #d4d4d4;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.favorite:hover span[class^=icon] {
+  color: #0499dd;
+}

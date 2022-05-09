@@ -12,6 +12,16 @@
 //container
 @import "./container.css";
 
+//animation
+@import "./animation.scss";
+
+@import "./title-screen.scss";
+@import "./footer.scss";
+@import "./card.scss";
+@import "./button.scss";
+@import "./search.scss";
+@import "./filter.scss";
+
 body,
 html {
     height: 100%;

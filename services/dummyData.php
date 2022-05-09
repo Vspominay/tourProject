@@ -4,6 +4,7 @@ require './models/Cost.php';
 
 $toursArray = array(
     new Tour(
+        0,
         "Armas Kaplan Paradise 5",
         "Туреччина",
         "7 діб",
@@ -13,8 +14,11 @@ $toursArray = array(
         "Курорт",
         7.5,
         array('https://www.fairmont.com/assets/0/104/1785/1790/5059/5067/ba5c8a82-6dd5-4635-8ac8-f29dc63c9e9a.jpg'),
+        false,
+        array('')
     ),
     new Tour(
+        1,
         "Kleopatra Micador Hotel, 4",
         "Норвегія",
         "5 діб",
@@ -24,8 +28,11 @@ $toursArray = array(
         "Курорт",
         8.2,
         array('https://img.poehalisnami.ua/static/hotels/turciya/alanya/h2559/orig/booking2559_12559_637378446796584300.jpg'),
+        false,
+        array('')
     ),
     new Tour(
+        2,
         "Santana Hotel",
         "Туреччина",
         "14 діб",
@@ -35,8 +42,11 @@ $toursArray = array(
         "Тур",
         7.5,
         array('https://img2.storyblok.com/1000x1100/filters:format(webp)/f/53624/1600x2400/4da2ee576e/sga_nymphenburg-palace_shutterstock_1600x2400.jpg'),
+        false,
+        array('')
     ),
     new Tour(
+        3,
         "Armas Kaplan Paradise 5",
         "Туреччина",
         "7 діб",
@@ -46,8 +56,11 @@ $toursArray = array(
         "VPI Пансіонат",
         9.2,
         array('https://www.otpusk.com/foto/3/1200x900/00/04/34/95/4349532.jpg'),
+        false,
+        array('')
     ),
     new Tour(
+        4,
         "A Week in Greece",
         "Греція",
         "7 діб",
@@ -57,5 +70,18 @@ $toursArray = array(
         "Екскурсія",
         10,
         array('https://img2.storyblok.com/800x600/filters:format(webp)/f/53624/4096x1260/ecc918f1b4/git_4096x1260.png'),
+        false,
+        array('')
     ),
 );
+
+
+function getTourById($id)
+{
+    global $toursArray;
+    foreach ($toursArray as $tour) {
+        if ($tour->id == $id) {
+            return $tour;
+        }
+    }
+}

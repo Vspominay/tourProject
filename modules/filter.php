@@ -1,10 +1,12 @@
-<div class="filter">
+<!-- <div class="filter _anim-items">
     <div class="filter-wrapper">
         <div class="filter-title">
             <h3>Фильтры</h3>
         </div>
         <div class="filter-items">
             <div class="range">
+                <input type="number" hidden value="1000" id="minHiddenValue">
+                <input type="number" hidden value="15000" id="maxHiddenValue">
                 <div class="range-text">Стоимость</div>
 
                 <div class="range-output">
@@ -37,7 +39,6 @@
                         <li><input type="checkbox" id="checkboxEight" value="Derpy Hooves"><label for="checkboxEight">8 чел.</label></li>
                         <li><input type="checkbox" id="checkboxNine" value="Princess Celestia"><label for="checkboxNine">9 чел.</label></li>
                         <li><input type="checkbox" id="checkboxTen" value="Gusty"><label for="checkboxTen">10+ чел.</label></li>
-
                     </ul>
 
                 </div>
@@ -89,4 +90,10 @@
             </a>
         </div>
     </div>
-</div>
+</div> -->
+
+<?php
+require('../models/Filter.php');
+$filter = new Filter(1000, 15000, array(1, 2, 3, 4, 5, 6, 7), array('Paris', 'Dubai', 'Turkey', 'Austria'));
+$filter->generateFilter();
+?>
