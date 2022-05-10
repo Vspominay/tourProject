@@ -28,7 +28,7 @@ class Filter implements IFilter
     {
         return <<< EOT
         <div class="range">
-            <div class="range-text">Стоимость</div>
+            <div class="range-text">Price</div>
                 <input type="number" hidden value="$this->minValue" id="minHiddenValue">
                 <input type="number" hidden value="$this->maxValue" id="maxHiddenValue">
             <div class="range-output">
@@ -52,13 +52,13 @@ class Filter implements IFilter
         $peopleinputs = '';
 
         foreach ($this->peopleCount as $pesronCount) {
-            $peopleinputs .= "<li><input type='checkbox' id='checkbox$pesronCount' value='$pesronCount'><label for='checkbox$pesronCount'>$pesronCount чел.</label></li>\r\n";
+            $peopleinputs .= "<li><input type='checkbox' id='checkbox$pesronCount' value='$pesronCount'><label for='checkbox$pesronCount'>$pesronCount pers.</label></li>\r\n";
         }
 
         return <<< EOT
             <div class="people">
                 <div class="range-text">
-                    Количество человек
+                    Prople count
                 </div>
                 <div class="people-count-block">
                     <ul class="ks-cboxtags">
@@ -86,7 +86,7 @@ class Filter implements IFilter
         return <<< EOT
             <div class="place">
                 <div class="range-text">
-                    Место
+                    Country
                 </div>
 
                 <ul class="place-items">
@@ -114,7 +114,7 @@ class Filter implements IFilter
         <div class="filter _anim-items">
             <div class="filter-wrapper">
                 <div class="filter-title">
-                    <h3>Фильтры</h3>
+                    <h3>Filters</h3>
                 </div>
                 <div class="filter-items">
                     $range
@@ -122,9 +122,8 @@ class Filter implements IFilter
                     $people
                     $separator
                     $country
-
                     <a href="#" class="btn">
-                        Показать
+                        Show
                     </a>
                 </div>
             </div>

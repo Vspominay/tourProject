@@ -41,9 +41,9 @@ class HomePage extends APage
                             <div class="header__menu">
                                 <nav class="header__menu-nav">
                                     <ul class="header__list">
-                                        <li class="header__list-item"><a href="#main"> Главная</a></li>
-                                        <li class="header__list-item"><a href="#trips"> Экскурсии</a></li>
-                                        <li class="header__list-item"><a href="#cabinet"> Личный кабинет</a></li>
+                                        <li class="header__list-item"><a href="#main"> Home</a></li>
+                                        <li class="header__list-item"><a href="#trips"> Tours</a></li>
+                                        <li class="header__list-item"><a href="#cabinet"> My Tours</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -55,13 +55,13 @@ class HomePage extends APage
                                 <nav class="header__menu-burg">
                                     <ul class="header__menu-items-burg">
                                         <li class="header__menu-item-burg">
-                                            <a class="btn" href="#main"> Главная</a>
+                                            <a class="btn" href="#main"> Home</a>
                                         </li>
                                         <li class="header__menu-item-burg">
-                                            <a class="btn" href="#trips"> Экскурсии</a>
+                                            <a class="btn" href="#trips"> Tours</a>
                                         </li>
                                         <li class="header__menu-item-burg">
-                                            <a class="btn" href="#cabinet"> Личный кабинет</a>
+                                            <a class="btn" href="#cabinet"> My Tours</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -76,7 +76,7 @@ class HomePage extends APage
                     <div class="title-screen__inner">
                         <div class="title-screen__main-text">
                             <h1>
-                                НАШИ ЭКСКУРСИИ
+                                ACTIVE TOURS
                             </h1>
                         </div>
                     </div>
@@ -110,51 +110,50 @@ class HomePage extends APage
 
     private function generateSearch()
     {
-
         return <<< EOT
-    <section class="search">
-        <div class="search__inner">
-            <div class="search-types">
-                <ul class="types-items">
-                    <li class="types-item active">Автобусный тур</li>
-                    <li class="types-item">Джимпинг</li>
-                    <li class="types-item">Яхтинг</li>
-                    <li class="types-item">каньонинг</li>
-                </ul>
+        <section class="search">
+            <div class="search__inner">
+                <div class="search-types">
+                    <ul class="types-items">
+                        <li class="types-item active">Hotel</li>
+                        <li class="types-item">Tour</li>
+                        <li class="types-item">Camping</li>
+                        <li class="types-item">Hot tours</li>
+                    </ul>
+                </div>
+
+                <div class="search-config">
+
+                    <div class="search__input-col">
+                        <div class="search-input-block">
+                            <span class="icon-location"></span>
+                            <input type="text" class="input-field" placeholder="City...">
+                        </div>
+                    </div>
+
+                    <div class="search__input-col">
+                        <div class="search-input-block">
+                            <span class="icon-calendar"></span>
+                            <input type="date" class="input-field" placeholder="DD.MM.YYYY">
+                        </div>
+                    </div>
+
+                    <div class="search__input-col">
+                        <div class="search-input-block">
+                            <span class="icon-people"></span>
+                            <input type="text" class="input-field" placeholder="People count..">
+                        </div>
+                    </div>
+
+                    <div class="search__input-col">
+                        <a href="#" class="btn search-btn">
+                            Show
+                        </a>
+                    </div>
+
+                </div>
             </div>
-
-            <div class="search-config">
-
-                <div class="search__input-col">
-                    <div class="search-input-block">
-                        <span class="icon-location"></span>
-                        <input type="text" class="input-field" placeholder="Город...">
-                    </div>
-                </div>
-
-                <div class="search__input-col">
-                    <div class="search-input-block">
-                        <span class="icon-calendar"></span>
-                        <input type="date" class="input-field" placeholder="ДД.ММ.ГГГГ">
-                    </div>
-                </div>
-
-                <div class="search__input-col">
-                    <div class="search-input-block">
-                        <span class="icon-people"></span>
-                        <input type="text" class="input-field" placeholder="Кол-во людей..">
-                    </div>
-                </div>
-
-                <div class="search__input-col">
-                    <a href="#" class="btn search-btn">
-                        Показать
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    EOT;
+        </section>
+        EOT;
     }
 }

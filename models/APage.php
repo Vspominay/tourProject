@@ -57,9 +57,9 @@ abstract class APage
                     </div>
                     <div class="footer__content">
                         <ul class="footer__content-nav-items">
-                            <li class="footer__content-item"><a href="#">Главная</a></li>
-                            <li class="footer__content-item"><a href="#">Экскурсии</a></li>
-                            <li class="footer__content-item"><a href="#">Личный кабинет</a></li>
+                            <li class="footer__content-item"><a href="#">Home</a></li>
+                            <li class="footer__content-item"><a href="#">Tours</a></li>
+                            <li class="footer__content-item"><a href="#">My tours</a></li>
                         </ul>
 
                         <ul class="footer__content-contact-items">

@@ -12,7 +12,7 @@ interface ILuxuryTour
     public function getRentCars();
 }
 
-class Tour implements ITour
+class Tour
 {
     private $id;
     private $title;
@@ -26,6 +26,7 @@ class Tour implements ITour
     private $tourImages;
     private $liked;
     private $travelRoute;
+    private $additionalSpends;
 
     public function __construct(
         $id,
@@ -39,7 +40,8 @@ class Tour implements ITour
         $rate,
         $tourImages,
         $liked,
-        $travelRoute
+        $travelRoute,
+        $additionalSpends
     ) {
         $this->id = $id;
         $this->title = $title;
@@ -53,6 +55,7 @@ class Tour implements ITour
         $this->tourImages = $tourImages;
         $this->liked = $liked;
         $this->travelRoute = $travelRoute;
+        $this->additionalSpends = $additionalSpends;
     }
     function __get($property)
     {
@@ -81,6 +84,8 @@ class Tour implements ITour
                 return $this->tourImages;
             case 'travelRoute':
                 return $this->travelRoute;
+            case 'additionalSpends':
+                return $this->additionalSpends;
         }
     }
 
@@ -122,27 +127,18 @@ class Tour implements ITour
             case 'travelRoute':
                 $this->travelRoute = $value;
                 break;
+            case 'additionalSpends':
+                $this->additionalSpends = $value;
+                break;
         }
     }
 
-    function getGallery()
+    private function getGallery()
     {
         return $this->tourImages;
     }
 
-    function getShotrInformation()
-    {
-        return array(
-            $this->title,
-            $this->cost,
-            $this->during,
-            $this->date,
-            $this->type,
-            $this->rate
-        );
-    }
-
-    function generateShortDescription()
+    private function generateShortDescription()
     {
         $cropLength = 326;
         $resultString = $this->description;
@@ -152,7 +148,7 @@ class Tour implements ITour
         return $resultString;
     }
 
-    function getTitlePicture()
+    private function getTitlePicture()
     {
         return $this->getGallery()[0];
     }
@@ -190,7 +186,7 @@ class Tour implements ITour
                                 </span>
                             </div>
                             <div class="price__item-age">
-                                Взрослый билет
+                                Adult ticket
                             </div>
 
                         </div>
@@ -203,7 +199,7 @@ class Tour implements ITour
                                 </span>
                             </div>
                             <div class="price__item-age">
-                                Детский билет
+                                Сhild ticket
                             </div>
 
                         </div>
@@ -224,7 +220,7 @@ class Tour implements ITour
 
                     <div class="description__interact">
                         <a href="pages/tour-view/index.php?id=$this->id" class="btn">
-                            Подробнее
+                            Detail
                         </a>
 
                         <a href="#" class="favorite">
@@ -257,7 +253,8 @@ class luxuryTour extends Tour implements ILuxuryTour
         $rentCars,
         $tourImages,
         $liked,
-        $travelRoute
+        $travelRoute,
+        $additionalSpends
     ) {
 
         $this->trips = $trips;
@@ -274,7 +271,8 @@ class luxuryTour extends Tour implements ILuxuryTour
             $rate,
             $tourImages,
             $liked,
-            $travelRoute
+            $travelRoute,
+            $additionalSpends,
         );
     }
 
