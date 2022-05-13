@@ -36,14 +36,14 @@ class HomePage extends APage
                     <header class="header">
                         <div class="header__inner">
                             <div class="header__logo">
-                                <img src="../images/logo.png" width="40" height="60" alt="logo" />
+                                <img src="../../images/logo.png" width="40" height="60" alt="logo" />
                             </div>
                             <div class="header__menu">
                                 <nav class="header__menu-nav">
                                     <ul class="header__list">
-                                        <li class="header__list-item"><a href="#main"> Home</a></li>
-                                        <li class="header__list-item"><a href="#trips"> Tours</a></li>
-                                        <li class="header__list-item"><a href="#cabinet"> My Tours</a></li>
+                                        <li class="header__list-item"><a href="/pages/HomePage"> Home</a></li>
+                                        <li class="header__list-item"><a href="/pages/HomePage"> Tours</a></li>
+                                        <li class="header__list-item"><a href="/pages/HomePage"> My Tours</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -93,7 +93,7 @@ class HomePage extends APage
                         <section class="tours">
                             <div class="tours__list">
                                 <div class="tours__list-title _anim-items">
-                                    <h2>Наши туры</h2>
+                                    <h2>Our tours</h2>
                                 </div>
                                 <div class="row">
                                      $cardList
@@ -146,7 +146,7 @@ class HomePage extends APage
                     </div>
 
                     <div class="search__input-col">
-                        <a href="#" class="btn search-btn">
+                        <a href="/pages/HomePage" class="btn search-btn">
                             Show
                         </a>
                     </div>

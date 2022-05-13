@@ -122,7 +122,7 @@ class Filter implements IFilter
                     $people
                     $separator
                     $country
-                    <a href="#" class="btn">
+                    <a href="/pages/HomePage" class="btn">
                         Show
                     </a>
                 </div>

@@ -219,7 +219,7 @@ class Tour
                     </div>
 
                     <div class="description__interact">
-                        <a href="pages/tour-view/index.php?id=$this->id" class="btn">
+                        <a href="/pages/tour-view/index.php?id=$this->id" class="btn">
                             Detail
                         </a>
 

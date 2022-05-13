@@ -1,5 +1,4 @@
 <?php
-
 abstract class APage
 {
     protected $title;
@@ -53,13 +52,13 @@ abstract class APage
             <div class="container">
                 <div class="footer__inner">
                     <div class="footer__inner-logo">
-                        <img src="./images/footer-logo.png" width="80" height="115" alt="logo">
+                        <img src="../../images/footer-logo.png" width="80" height="115" alt="logo">
                     </div>
                     <div class="footer__content">
                         <ul class="footer__content-nav-items">
-                            <li class="footer__content-item"><a href="#">Home</a></li>
-                            <li class="footer__content-item"><a href="#">Tours</a></li>
-                            <li class="footer__content-item"><a href="#">My tours</a></li>
+                            <li class="footer__content-item"><a href="/pages/HomePage">Home</a></li>
+                            <li class="footer__content-item"><a href="/pages/HomePage">Tours</a></li>
+                            <li class="footer__content-item"><a href="/pages/HomePage">My tours</a></li>
                         </ul>
 
                         <ul class="footer__content-contact-items">

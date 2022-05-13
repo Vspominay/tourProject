@@ -1,8 +1,14 @@
 <?php
-require './models/Tour.php';
-require './models/Cost.php';
-require './models/AdditionalCost.php';
-require './models/TravelRoute.php';
+
+// require('./models/Tour.php');
+// require('./models/Cost.php');
+// require('./models/AdditionalCost.php');
+// require('./models/TravelRoute.php');
+
+require('../../models/Tour.php');
+require('../../models/Cost.php');
+require('../../models/AdditionalCost.php');
+require('../../models/TravelRoute.php');
 
 $toursArray = array(
     new Tour(
@@ -36,7 +42,7 @@ $toursArray = array(
             new AdditionalCost("Alcohol ", 650),
             new AdditionalCost("Diving", 786),
             new AdditionalCost("Rafting", 2000)
-        ),
+        )
     ),
     new Tour(
         1,
@@ -56,11 +62,13 @@ $toursArray = array(
             new TravelRoute("Tasting of cheese, honey, wine, chacha (included in the price of the tour), Blue Lake, Yupsharsky canyon", "https://www.cbh-cyprus.com/app/uploads/sites/30/2021/06/1-ATHENA-BEACH-HOTEL.jpg"),
             new TravelRoute("Термальный источник в с. Приморское.", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlBukolx5xeFh5fAKnPYax82vpxDVQtKH09ske3T8fGr0YxxBx2Pd2Ji-sEuo8uSuZiGg&usqp=CAU"),
         ),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600)
+        array(
+            new AdditionalCost("Parachute", 1512),
+            new AdditionalCost("Car", 750),
+            new AdditionalCost("Alcohol ", 650),
+            new AdditionalCost("Diving", 786),
+            new AdditionalCost("Rafting", 2000)
+        )
     ),
     new Tour(
         2,
@@ -80,11 +88,13 @@ $toursArray = array(
             new TravelRoute("Tasting of cheese, honey, wine, chacha (included in the price of the tour), Blue Lake, Yupsharsky canyon", "https://www.cbh-cyprus.com/app/uploads/sites/30/2021/06/1-ATHENA-BEACH-HOTEL.jpg"),
             new TravelRoute("Термальный источник в с. Приморское.", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlBukolx5xeFh5fAKnPYax82vpxDVQtKH09ske3T8fGr0YxxBx2Pd2Ji-sEuo8uSuZiGg&usqp=CAU"),
         ),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600)
+        array(
+            new AdditionalCost("Parachute", 1512),
+            new AdditionalCost("Car", 750),
+            new AdditionalCost("Alcohol ", 650),
+            new AdditionalCost("Diving", 786),
+            new AdditionalCost("Rafting", 2000)
+        )
     ),
     new Tour(
         3,
@@ -104,11 +114,13 @@ $toursArray = array(
             new TravelRoute("Tasting of cheese, honey, wine, chacha (included in the price of the tour), Blue Lake, Yupsharsky canyon", "https://www.cbh-cyprus.com/app/uploads/sites/30/2021/06/1-ATHENA-BEACH-HOTEL.jpg"),
             new TravelRoute("Термальный источник в с. Приморское.", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlBukolx5xeFh5fAKnPYax82vpxDVQtKH09ske3T8fGr0YxxBx2Pd2Ji-sEuo8uSuZiGg&usqp=CAU"),
         ),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600)
+        array(
+            new AdditionalCost("Parachute", 1512),
+            new AdditionalCost("Car", 750),
+            new AdditionalCost("Alcohol ", 650),
+            new AdditionalCost("Diving", 786),
+            new AdditionalCost("Rafting", 2000)
+        )
     ),
     new Tour(
         4,
@@ -128,12 +140,14 @@ $toursArray = array(
             new TravelRoute("Tasting of cheese, honey, wine, chacha (included in the price of the tour), Blue Lake, Yupsharsky canyon", "https://www.cbh-cyprus.com/app/uploads/sites/30/2021/06/1-ATHENA-BEACH-HOTEL.jpg"),
             new TravelRoute("Термальный источник в с. Приморское.", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlBukolx5xeFh5fAKnPYax82vpxDVQtKH09ske3T8fGr0YxxBx2Pd2Ji-sEuo8uSuZiGg&usqp=CAU"),
         ),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600),
-        new AdditionalCost("Взрослый билет", 1600)
-    ),
+        array(
+            new AdditionalCost("Parachute", 1512),
+            new AdditionalCost("Car", 750),
+            new AdditionalCost("Alcohol ", 650),
+            new AdditionalCost("Diving", 786),
+            new AdditionalCost("Rafting", 2000)
+        )
+    )
 );
 
 
