@@ -1,14 +1,15 @@
 <?php
+$root = $_SERVER['DOCUMENT_ROOT'];
 
 // require('./models/Tour.php');
 // require('./models/Cost.php');
 // require('./models/AdditionalCost.php');
 // require('./models/TravelRoute.php');
 
-require('../../models/Tour.php');
-require('../../models/Cost.php');
-require('../../models/AdditionalCost.php');
-require('../../models/TravelRoute.php');
+require("$root/models/Tour.php");
+require("$root/models/Cost.php");
+require("$root/models/AdditionalCost.php");
+require("$root/models/TravelRoute.php");
 
 $toursArray = array(
     new Tour(

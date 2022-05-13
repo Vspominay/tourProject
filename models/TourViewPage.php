@@ -51,13 +51,13 @@ class TourViewPage extends APage
                                 <nav class="header__menu-burg">
                                     <ul class="header__menu-items-burg">
                                         <li class="header__menu-item-burg">
-                                            <a class="btn" href="#main"> Home</a>
+                                            <a class="btn" href="/pages/homePage"> Home</a>
                                         </li>
                                         <li class="header__menu-item-burg">
-                                            <a class="btn" href="#trips"> Tours</a>
+                                            <a class="btn" href="/pages/homePage"> Tours</a>
                                         </li>
                                         <li class="header__menu-item-burg">
-                                            <a class="btn" href="#cabinet"> My tours</a>
+                                            <a class="btn" href="/pages/homePage"> My tours</a>
                                         </li>
                                     </ul>
                                 </nav>

@@ -8,9 +8,9 @@
                     <div class="header__menu">
                         <nav class="header__menu-nav">
                             <ul class="header__list">
-                                <li class="header__list-item"><a href="#main"> Главная</a></li>
-                                <li class="header__list-item"><a href="#trips"> Экскурсии</a></li>
-                                <li class="header__list-item"><a href="#cabinet"> Личный кабинет</a></li>
+                                <li class="header__list-item"><a href="/pages/homePage"> Главная</a></li>
+                                <li class="header__list-item"><a href="/pages/homePage"> Экскурсии</a></li>
+                                <li class="header__list-item"><a href="/pages/homePage"> Личный кабинет</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -22,13 +22,13 @@
                         <nav class="header__menu-burg">
                             <ul class="header__menu-items-burg">
                                 <li class="header__menu-item-burg">
-                                    <a class="btn" href="#main"> Главная</a>
+                                    <a class="btn" href="/pages/homePage"> Главная</a>
                                 </li>
                                 <li class="header__menu-item-burg">
-                                    <a class="btn" href="#trips"> Экскурсии</a>
+                                    <a class="btn" href="/pages/homePage"> Экскурсии</a>
                                 </li>
                                 <li class="header__menu-item-burg">
-                                    <a class="btn" href="#cabinet"> Личный кабинет</a>
+                                    <a class="btn" href="/pages/homePage"> Личный кабинет</a>
                                 </li>
                             </ul>
                         </nav>

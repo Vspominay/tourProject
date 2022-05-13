@@ -2,8 +2,8 @@
 require('./models/Routing.php');
 $url = key($_GET);
 $router = new Router();
-$router->addRoute("/pages/homePage", "homePage/index.php");
-$router->route("/pages/homePage" . $url);
+$router->addRoute("/", "homePage/index.php");
+$router->route("/" . $url);
 
 // require('./models/APage.php');
 // require('./models/HomePage.php');
