@@ -3,6 +3,10 @@ require('./models/Routing.php');
 $url = key($_GET);
 $router = new Router();
 $router->addRoute("/", "homePage/index.php");
+$router->addRoute("/auth", "auth/index.php");
+$router->addRoute("/admin", "admin/index.php");
+$router->addRoute("/admin/users", "users/index.php");
+
 $router->route("/" . $url);
 
 // require('./models/APage.php');

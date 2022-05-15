@@ -18,6 +18,7 @@ abstract class APage
     private function generateHead()
     {
         $scriptsLine = '';
+        $title = $this->title;
 
         if ($this->scripts != null) {
             foreach ($this->scripts as $script) {
@@ -33,7 +34,7 @@ abstract class APage
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>ExuForce</title>
+            <title>$title</title>
 
             <!-- scripts -->
             $scriptsLine

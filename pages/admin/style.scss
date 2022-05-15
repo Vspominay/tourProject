@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+@import "../../styles/variables.scss";
+@import "../../styles/normalize.css";
+@import "../../styles/button.scss";
+@import "../../styles/search.scss";
+@import "../../styles/title-screen.css";
+@import "../../styles/container.css";
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: $text-color;
+    min-height: 100vh;
+    background-color: #e5e5e5;
+    overflow: hidden;
+}
+.wrapper {
+    position: relative;
+}
+
+.header {
+    background-color: #fff;
+    &__logo {
+        h3 {
+            color: $accent;
+        }
+    }
+    padding: 0 40px;
+    border-radius: 0 0 $btn-radius $btn-radius;
+    box-shadow: 0px 7px 18px 10px rgba(34, 60, 80, 0.2);
+    .header__list {
+        a {
+            color: $text-color;
+        }
+    }
+}
+
+//statistic
+.statistic {
+    position: relative;
+    padding: 50px 0;
+
+    &-title {
+        margin-bottom: 35px;
+        pointer-events: none;
+        h1 {
+            color: $text-color;
+            font-size: 32px;
+        }
+    }
+
+    &_inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+
+    &-col {
+        width: 33.333%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+
+    &-item {
+        border-radius: $btn-radius;
+        background-color: #fff;
+        padding: 25px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        box-shadow: 2px 4px 5px hsla(0, 0, 0, 0.1), -2px 4px 5px hsla(0, 0, 0, 0.1);
+        transition: all 0.2s ease;
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0px 7px 18px 10px rgba(34, 60, 80, 0.2);
+        }
+
+        .item-title {
+            margin-bottom: 10px;
+            h3 {
+                color: $accent;
+            }
+        }
+
+        .item-value {
+            h3 {
+                color: $text-color;
+            }
+        }
+    }
+}
+
+.footer {
+    display: none;
+}

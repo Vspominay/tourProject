@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?d8rgqe');
-    src: url('../fonts/icomoon.eot?d8rgqe#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?d8rgqe') format('truetype'),
-        url('../fonts/icomoon.woff?d8rgqe') format('woff'),
-        url('../fonts/icomoon.svg?d8rgqe#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?oo6kq5');
+    src: url('../fonts/icomoon.eot?oo6kq5#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?oo6kq5') format('truetype'),
+        url('../fonts/icomoon.woff?oo6kq5') format('woff'),
+        url('../fonts/icomoon.svg?oo6kq5#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -23,6 +23,26 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-delete:before {
+    content: "\e90a";
+}
+
+.icon-lock:before {
+    content: "\e90b";
+}
+
+.icon-search:before {
+    content: "\e90c";
+}
+
+.icon-update:before {
+    content: "\e90d";
+}
+
+.icon-mail:before {
+    content: "\e90e";
 }
 
 .icon-phone:before {
