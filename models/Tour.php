@@ -232,6 +232,60 @@ class Tour
         </div> 
         EOT;
     }
+
+    public function generateAdminPost()
+    {
+        $normalPrice = $this->cost->normalPrice;
+        $childPrice = $this->cost->childPrice;
+        $titlePicture = $this->getTitlePicture();
+        $shortDescription = $this->generateShortDescription();
+
+        return <<< EOT
+         <div class='tours-col'>
+                        <div class='tours-item'>
+                            <div class='tour-image__block'>
+                                <div class='background-filter'></div>
+                                <div class='tour-img'>
+                                <img src="$titlePicture" alt="$this->title"></img>
+                                </div>
+
+                                <div class='tour-image__cost'>
+                                    <div class='cost-item'>
+                                        <span class='icon-coins'></span>
+                                        <h3>$normalPrice / $childPrice</h3>
+                                    </div>
+                                    <div class='cost-item'>
+                                        <span class='icon-time'></span>
+                                        <h3>$this->date</h3>
+                                    </div>
+                                </div>
+
+                                <a href='/admin/tours/$this->id' class='tour-update'>
+                                    <span class='icon-update'></span>
+                                </a>
+                            </div>
+
+                            <div class='tour-decription'>
+                                <div class='desription-type'>
+                                    <h4>
+                                        $this->type
+                                    </h4>
+                                </div>
+                                <div class='description-title'>
+                                    <h3>
+                                       $this->title
+                                    </h3>
+                                </div>
+                                <div class='description-text'>
+                                    <p>
+                                        $shortDescription
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        EOT;
+    }
 }
 
 class luxuryTour extends Tour implements ILuxuryTour

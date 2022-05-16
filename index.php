@@ -6,6 +6,7 @@ $router->addRoute("/", "homePage/index.php");
 $router->addRoute("/auth", "auth/index.php");
 $router->addRoute("/admin", "admin/index.php");
 $router->addRoute("/admin/users", "users/index.php");
+$router->addRoute("/admin/tours", "tours/index.php");
 
 $router->route("/" . $url);
 
