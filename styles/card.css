@@ -1,0 +1,166 @@
+/*======= COLORS =======*/
+/*======= BORDER =======*/
+.col {
+  width: 100%;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.col .col-content {
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 15px 21px 9px rgba(34, 60, 80, 0.2);
+          box-shadow: 1px 15px 21px 9px rgba(34, 60, 80, 0.2);
+}
+.col .content-image {
+  width: 100%;
+  min-height: 240px;
+  overflow: hidden;
+}
+.col .content-image img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.col .content-image img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.col .content__description {
+  padding: 20px 20px 40px;
+}
+.col .description-title {
+  margin-bottom: 20px;
+}
+.col .description-price__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -5px;
+  margin-bottom: 25px;
+}
+.col .description-price__items .price__item-cost,
+.col .description-price__items .description__during {
+  color: #0499DD;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+.col .description-price__item {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+.col .description-price__item:last-child {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.col .description-price__item:last-child .icon-time {
+  margin-right: 7px;
+}
+.col .description-price__item .price__item-age {
+  font-size: 10px;
+  line-height: 12px;
+}
+.col .description__specification {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+.col .description__specification::before {
+  content: "";
+  position: absolute;
+  background-color: #0499DD;
+  border-radius: 40px;
+  width: 3px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+}
+.col .description__interact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.col .favorite {
+  margin-left: 20px;
+  background: #ededed;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.col .favorite span[class^=icon] {
+  margin-top: 2px;
+  color: #d4d4d4;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.col .favorite:hover span[class^=icon] {
+  color: #0499DD;
+}
+
+@media (min-width: 420px) {
+  .col .description-price__item {
+    width: 33.333%;
+  }
+  .col .description-price__item:last-child {
+    width: 33.333%;
+  }
+}
+@media (min-width: 768px) {
+  .col-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .col .content-image {
+    min-width: 230px;
+    max-width: 230px;
+  }
+}
