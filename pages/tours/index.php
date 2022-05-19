@@ -1,10 +1,11 @@
 <?php
 $root = $_SERVER['DOCUMENT_ROOT'];
 
-require('./models/APage.php');
-require('./models/AdminTours.php');
-require("$root/services/dummyData.php");
-$tours = $toursArray;
+require_once("$root/models/APage.php");
+require_once("$root/models/AdminTours.php");
+require_once("$root/services/dummyData.php");
+
+$tours = getTours();
 
 $adminTours = new AdminTours('Admin Tours', array(), '../pages/tours/style.css', $tours);
 

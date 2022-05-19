@@ -22,7 +22,6 @@ class Tour
     private $cost;
     private $date;
     private $type;
-    private $rate;
     private $tourImages;
     private $liked;
     private $travelRoute;
@@ -37,7 +36,6 @@ class Tour
         $cost,
         $date,
         $type,
-        $rate,
         $tourImages,
         $liked,
         $travelRoute,
@@ -51,7 +49,6 @@ class Tour
         $this->cost = $cost;
         $this->date = $date;
         $this->type = $type;
-        $this->rate = $rate;
         $this->tourImages = $tourImages;
         $this->liked = $liked;
         $this->travelRoute = $travelRoute;
@@ -78,8 +75,6 @@ class Tour
                 return $this->date;
             case 'type':
                 return $this->type;
-            case 'rate':
-                return $this->rate;
             case 'tourImages':
                 return $this->tourImages;
             case 'travelRoute':
@@ -117,9 +112,6 @@ class Tour
                 break;
             case 'type':
                 $this->type = $value;
-                break;
-            case 'rate':
-                $this->rate = $value;
                 break;
             case 'tourImages':
                 $this->tourImages = $value;
@@ -301,7 +293,6 @@ class luxuryTour extends Tour implements ILuxuryTour
         $cost,
         $date,
         $type,
-        $rate,
         $trips,
         $rentCars,
         $tourImages,
@@ -321,7 +312,6 @@ class luxuryTour extends Tour implements ILuxuryTour
             $cost,
             $date,
             $type,
-            $rate,
             $tourImages,
             $liked,
             $travelRoute,

@@ -41,9 +41,9 @@ class HomePage extends APage
                             <div class="header__menu">
                                 <nav class="header__menu-nav">
                                     <ul class="header__list">
-                                        <li class="header__list-item"><a href="/pages/HomePage"> Home</a></li>
-                                        <li class="header__list-item"><a href="/pages/HomePage"> Tours</a></li>
-                                        <li class="header__list-item"><a href="/pages/HomePage"> My Tours</a></li>
+                                        <li class="header__list-item"><a href="/"> Home</a></li>
+                                        <li class="header__list-item"><a href="/"> Tours</a></li>
+                                        <li class="header__list-item"><a href="/admin"> My Tours</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -55,13 +55,13 @@ class HomePage extends APage
                                 <nav class="header__menu-burg">
                                     <ul class="header__menu-items-burg">
                                         <li class="header__menu-item-burg">
-                                            <a class="btn" href="/pages/homePage"> Home</a>
+                                            <a class="btn" href="/"> Home</a>
                                         </li>
                                         <li class="header__menu-item-burg">
-                                            <a class="btn" href="/pages/homePage"> Tours</a>
+                                            <a class="btn" href="/"> Tours</a>
                                         </li>
                                         <li class="header__menu-item-burg">
-                                            <a class="btn" href="/pages/homePage"> My Tours</a>
+                                            <a class="btn" href="/admin"> My Tours</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -146,7 +146,7 @@ class HomePage extends APage
                     </div>
 
                     <div class="search__input-col">
-                        <a href="/pages/HomePage" class="btn search-btn">
+                        <a href="/" class="btn search-btn">
                             Show
                         </a>
                     </div>

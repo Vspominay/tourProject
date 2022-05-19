@@ -98,8 +98,8 @@ class Statistic extends APage
                                         <ul class="header__list">
                                             <li class="header__list-item"><a href="/admin"> Statistic</a></li>
                                             <li class="header__list-item"><a href="/admin/users"> Users</a></li>
-                                            <li class="header__list-item"><a href="/pages/HomePage"> Tours</a></li>
-                                            <li class="header__list-item"><a href="/pages/HomePage"> Exit</a></li>
+                                            <li class="header__list-item"><a href="/admin/tours"> Tours</a></li>
+                                            <li class="header__list-item"><a href="/"> Exit</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -114,10 +114,10 @@ class Statistic extends APage
                                                 <a class="btn" href="/admin/users"> Users</a>
                                             </li>
                                             <li class="header__menu-item-burg">
-                                                <a class="btn" href="/pages/homePage"> Tours</a>
+                                                <a class="btn" href="/"> Tours</a>
                                             </li>
                                             <li class="header__menu-item-burg">
-                                                <a class="btn" href="/pages/homePage">Exit</a>
+                                                <a class="btn" href="/">Exit</a>
                                             </li>
                                         </ul>
                                     </nav>

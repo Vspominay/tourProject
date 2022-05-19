@@ -23,7 +23,7 @@ class NotFound extends APage
                         <span>Page is not found</span>
                     </div>
                     <div class="notFound-back">
-                        <a href="/pages/homePage/" class="btn">
+                        <a href="/" class="btn">
                             Home
                         </a>
                     </div>
