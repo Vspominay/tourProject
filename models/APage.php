@@ -22,7 +22,7 @@ abstract class APage
 
         if ($this->scripts != null) {
             foreach ($this->scripts as $script) {
-                $scriptsLine .= "<script defer src=$script></script>\r\n";
+                $scriptsLine .= "<script defer type='text/javascript' src='$script'></script>\r\n";
             }
         }
 

@@ -138,9 +138,8 @@ class Tour
         return $this->tourImages;
     }
 
-    private function generateShortDescription()
+    private function generateShortDescription($cropLength = 326)
     {
-        $cropLength = 326;
         $resultString = $this->description;
         if (strlen($this->description) >= $cropLength) {
             $resultString = substr($this->description, 0, $cropLength) . "...";
@@ -219,7 +218,7 @@ class Tour
                     </div>
 
                     <div class="description__interact">
-                        <a href="/pages/tour-view/index.php?id=$this->id" class="btn">
+                        <a href="/details/$this->id" class="btn">
                             Detail
                         </a>
 
@@ -238,7 +237,7 @@ class Tour
         $normalPrice = $this->cost->normalPrice;
         $childPrice = $this->cost->childPrice;
         $titlePicture = $this->getTitlePicture();
-        $shortDescription = $this->generateShortDescription();
+        $shortDescription = $this->generateShortDescription(100);
 
         return <<< EOT
          <div class='tours-col'>

@@ -23,7 +23,7 @@
   outline: 2px solid transparent;
 }
 .btn:hover {
-  outline: 2px solid #0499DD;
+  outline: 2px solid #0499dd;
   background: transparent;
   color: transparent;
   -webkit-background-clip: text;
@@ -65,7 +65,7 @@
   transition: 0.2s;
 }
 .favorite.active span[class^=icon] {
-  color: #0499DD;
+  color: #0499dd;
 }
 
 .favorite span[class^=icon] {
@@ -141,10 +141,10 @@
   transition: 0.2s;
 }
 .search-types .types-item.active {
-  color: #0499DD;
+  color: #0499dd;
 }
 .search-types .types-item.active::before {
-  background-color: #0499DD;
+  background-color: #0499dd;
 }
 
 .search-config {
@@ -170,7 +170,7 @@
   overflow: hidden;
 }
 .search-input-block span[class^=icon] {
-  color: #0499DD;
+  color: #0499dd;
   font-size: 16px;
   position: absolute;
   right: 19px;
@@ -190,7 +190,7 @@
   transition: 0.2s;
 }
 .search-input-block .input-field:focus {
-  border: 2px solid #0499DD;
+  border: 2px solid #0499dd;
 }
 
 @media (min-width: 768px) {
@@ -244,7 +244,7 @@ body {
           box-shadow: 0px 7px 18px 10px rgba(34, 60, 80, 0.2);
 }
 .header__logo h3 {
-  color: #0499DD;
+  color: #0499dd;
 }
 .header .header__list a {
   color: #282828;
@@ -329,7 +329,7 @@ body {
 }
 
 [class^=icon-] {
-  color: #0499DD;
+  color: #0499dd;
 }
 
 .user-delete {
@@ -339,5 +339,5 @@ body {
   transition: 0.3s;
 }
 .user-delete:hover {
-  color: #0499DD;
+  color: #0499dd;
 }

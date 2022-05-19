@@ -1,4 +1,5 @@
 <?php
+
 $root = $_SERVER['DOCUMENT_ROOT'];
 
 // require('./models/Tour.php');
@@ -6,10 +7,10 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 // require('./models/AdditionalCost.php');
 // require('./models/TravelRoute.php');
 
-require("$root/models/Tour.php");
-require("$root/models/Cost.php");
-require("$root/models/AdditionalCost.php");
-require("$root/models/TravelRoute.php");
+require_once("$root/models/Tour.php");
+require_once("$root/models/Cost.php");
+require_once("$root/models/AdditionalCost.php");
+require_once("$root/models/TravelRoute.php");
 
 $toursArray = array(
     new Tour(
@@ -150,7 +151,6 @@ $toursArray = array(
         )
     )
 );
-
 
 function getTourById($id)
 {

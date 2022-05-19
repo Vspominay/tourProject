@@ -153,7 +153,7 @@ class AdminTours extends APage
                 <div class="tours-row">
                     <div class="tours-col">
                         <div class="tours-item">
-                            <a href="#" class="tours-create">
+                            <a href="/admin/tours/create" class="tours-create">
                                 +
                             </a>
                         </div>

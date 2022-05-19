@@ -20,7 +20,7 @@
   outline: 2px solid transparent;
 }
 .btn:hover {
-  outline: 2px solid #0499DD;
+  outline: 2px solid #0499dd;
   background: transparent;
   color: transparent;
   -webkit-background-clip: text;
@@ -62,7 +62,7 @@
   transition: 0.2s;
 }
 .favorite.active span[class^=icon] {
-  color: #0499DD;
+  color: #0499dd;
 }
 
 .favorite span[class^=icon] {
@@ -113,6 +113,6 @@ body {
   margin-bottom: 25px;
 }
 .notFound-title h1 {
-  color: #0499DD;
+  color: #0499dd;
   font-size: 150px;
 }
