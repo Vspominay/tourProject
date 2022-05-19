@@ -1,0 +1,66 @@
+@import "./variables.scss";
+
+.btn {
+    display: inline-block;
+    border-radius: $btn-radius;
+    background: $gradient;
+    padding: 15px 50px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+    transition: 0.3s linear all;
+    text-align: center;
+    outline: 2px solid transparent;
+
+    &:hover {
+        outline: 2px solid $accent;
+        background: transparent;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: $gradient;
+    }
+}
+
+.search-btn {
+    display: block;
+    border-radius: $input-radius;
+}
+
+.description__interact {
+    display: flex;
+    align-items: center;
+}
+
+.favorite {
+    margin-left: 20px;
+    background: #ededed;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+
+    &.active span[class^="icon"] {
+        color: $accent;
+    }
+}
+.favorite span[class^="icon"] {
+    margin-top: 2px;
+    color: #d4d4d4;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+.favorite:hover span[class^="icon"] {
+    color: #0499dd;
+}
