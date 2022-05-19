@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+@import "../../styles/variables.scss";
+@import "../../styles/normalize.css";
+@import "../../styles/button.scss";
+@import "../../styles/search.scss";
+@import "../../styles/title-screen.css";
+@import "../../styles/container.css";
+@import "../../styles/icon-fonts.css";
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: $text-color;
+    min-height: 100vh;
+    background-color: #e5e5e5;
+    overflow: hidden;
+}
+.wrapper {
+    position: relative;
+}
+
+.header {
+    background-color: #fff;
+    &__logo {
+        h3 {
+            color: $accent;
+        }
+    }
+    padding: 0 40px;
+    border-radius: 0 0 $btn-radius $btn-radius;
+    box-shadow: 0px 7px 18px 10px rgba(34, 60, 80, 0.2);
+    .header__list {
+        a {
+            color: $text-color;
+        }
+    }
+}
+//users
+.search-input-block {
+    max-width: 420px;
+    margin: 0 auto 35px auto;
+    transition: all 0.2s ease;
+    box-shadow: 2px 4px 5px hsla(0, 0, 0, 0.1), -2px 4px 5px hsla(0, 0, 0, 0.1);
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0px 7px 18px 10px rgba(34, 60, 80, 0.2);
+    }
+}
+.users {
+    position: relative;
+    padding: 50px 0;
+    &-title {
+        margin-bottom: 35px;
+        pointer-events: none;
+        h1 {
+            color: $text-color;
+            font-size: 32px;
+        }
+    }
+
+    &__inner {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    &-items {
+        .user-item {
+            margin-bottom: 15px;
+            padding: 15px 40px;
+            border-radius: $btn-radius;
+            background-color: #fff;
+            box-shadow: 2px 4px 5px hsla(0, 0, 0, 0.1), -2px 4px 5px hsla(0, 0, 0, 0.1);
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0px 7px 18px 10px rgba(34, 60, 80, 0.2);
+            }
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            margin-right: 25px;
+            li {
+                span {
+                    pointer-events: none;
+                    color: rgba($color: $text-color, $alpha: 0.4);
+                    margin-right: 7px;
+                }
+            }
+            li + li {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+.footer {
+    display: none;
+}
+
+[class^="icon-"] {
+    color: $accent;
+}
+
+.user-delete {
+    cursor: pointer;
+    color: rgba($color: rgb(109, 0, 0), $alpha: 0.6);
+    transition: 0.3s;
+
+    &:hover {
+        color: $accent;
+    }
+}

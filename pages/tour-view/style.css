@@ -24,7 +24,7 @@ h1 {
 h2 {
   font-size: 24px;
   line-height: 29px;
-  color: #0499DD;
+  color: #0499dd;
 }
 
 h3 {
@@ -37,7 +37,7 @@ h5 {
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
-  color: #FFC700;
+  color: #ffc700;
 }
 
 @media (min-width: 768px) {
@@ -147,7 +147,7 @@ section {
   height: 100%;
 }
 .title-inner h2 {
-  color: #FFC700;
+  color: #ffc700;
 }
 .title-inner h1 {
   margin-bottom: 40px;
@@ -165,12 +165,12 @@ section {
 }
 
 h3 {
-  color: #0499DD;
+  color: #0499dd;
 }
 
 .price__item-cost,
 .description__during {
-  color: #0499DD;
+  color: #0499dd;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
@@ -340,7 +340,7 @@ h3 {
   content: "";
   left: 0;
   position: absolute;
-  background-color: #FFC700;
+  background-color: #ffc700;
   border-radius: 50%;
   height: 15px;
   width: 15px;
